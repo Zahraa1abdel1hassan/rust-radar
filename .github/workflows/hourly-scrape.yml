@@ -1,0 +1,48 @@
+name: Hourly Scrape
+
+on:
+  schedule:
+    # Runs at minute 0 of every hour (UTC)
+    - cron: '0 * * * *'
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write   # needed to commit data.json back
+
+jobs:
+  scrape:
+    name: Scrape & update data.json
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout the repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      # 2. Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: scraper/requirements.txt
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: pip install -r scraper/requirements.txt
+
+      # 4. Run the scraper — writes site/data.json
+      - name: Run scraper
+        run: python scraper/scrape.py
+
+      # 5. Commit updated data.json (only if changed)
+      - name: Commit data.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add site/data.json
+          git diff --cached --quiet || git commit -m "chore: refresh data.json [skip ci]"
+          git push

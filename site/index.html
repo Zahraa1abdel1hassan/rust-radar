@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rust Radar — the best Rust programming news, aggregated hourly from RSS feeds and Hacker News. Stay on top of crates, releases, and community discussions.">
+  <meta name="theme-color" content="#FF6B35">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rust Radar — Niche Tech News Aggregator">
+  <meta property="og:description" content="Hourly Rust news from RSS feeds and Hacker News, scored and ranked.">
+  <meta property="og:type" content="website">
+
+  <title>Rust Radar — Rust Programming News Aggregator</title>
+
+  <!-- Preload critical fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Design system CSS (loads fonts internally) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Inline critical nav styles to avoid layout shift -->
+  <style>
+    body { visibility: hidden; }
+    body.ready { visibility: visible; }
+  </style>
+</head>
+<body>
+
+  <!-- ╔══════════════════════════════════════════════════╗ -->
+  <!-- ║  SKIP LINK (a11y)                                ║ -->
+  <!-- ╚══════════════════════════════════════════════════╝ -->
+  <a href="#main-content" class="sr-only" style="
+    position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;
+    background:var(--color-primary); color:#fff; padding:8px 16px; border-radius:6px;
+    font-size:13px; z-index:9999;
+  ">Skip to main content</a>
+
+  <!-- ╔══════════════════════════════════════════════════╗ -->
+  <!-- ║  HEADER                                          ║ -->
+  <!-- ╚══════════════════════════════════════════════════╝ -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+
+        <!-- Logo -->
+        <div class="logo-block">
+          <div class="logo-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <!-- Rust "gear" signal icon -->
+              <path d="M12 2L13.09 8.26L19 5L15.74 10.91L22 12L15.74 13.09L19 19L13.09 15.74L12 22L10.91 15.74L5 19L8.26 13.09L2 12L8.26 10.91L5 5L10.91 8.26L12 2Z" fill="white" fill-opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">Rust Radar</span>
+            <span class="logo-sub">⚡ niche news · updated hourly</span>
+          </div>
+        </div>
+
+        <!-- Live stats -->
+        <div class="header-stats">
+          <div class="stat-chip" aria-label="Feed status: live">
+            <span class="dot" aria-hidden="true"></span>
+            <span id="story-count-chip">— stories</span>
+          </div>
+          <span class="refresh-time" id="last-updated-header"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ╔══════════════════════════════════════════════════╗ -->
+  <!-- ║  MAIN                                            ║ -->
+  <!-- ╚══════════════════════════════════════════════════╝ -->
+  <main id="main-content" class="container" role="main">
+
+    <!-- Search + Filter controls -->
+    <section class="controls-bar" aria-label="Search and filter stories">
+      <div class="search-wrap">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input
+          type="search"
+          id="search-input"
+          name="search"
+          placeholder="Search Rust news…"
+          aria-label="Search stories"
+          autocomplete="off"
+          spellcheck="false"
+        >
+      </div>
+
+      <div class="filter-row" role="group" aria-label="Filter by source">
+        <span class="filter-label" aria-hidden="true">Source:</span>
+        <button class="filter-btn active" id="filter-all"   data-filter="all"  aria-pressed="true">All</button>
+        <button class="filter-btn"        id="filter-hn"    data-filter="hn"   aria-pressed="false">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.974v-5.064l4.1-7.708h-2.194l-2.972 5.975-2.962-5.975H6.951z"/></svg>
+          HN
+        </button>
+        <button class="filter-btn"        id="filter-rss"   data-filter="rss"  aria-pressed="false">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19.01 7.38 20 6.18 20C4.98 20 4 19.01 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg>
+          RSS
+        </button>
+        <span class="result-count" id="result-count" aria-live="polite"></span>
+      </div>
+    </section>
+
+    <!-- Stories section -->
+    <section aria-label="Latest Rust stories">
+      <div class="section-heading">
+        <h2>Latest Stories</h2>
+        <div class="section-divider" aria-hidden="true"></div>
+      </div>
+
+      <!-- Skeleton loaders (shown while fetching) -->
+      <div id="skeleton-list" aria-hidden="true">
+        <div class="skeleton-card">
+          <div><div class="skeleton-line" style="width:24px;height:16px;"></div></div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div class="skeleton-line" style="height:18px;width:85%;"></div>
+            <div class="skeleton-line" style="height:12px;width:55%;"></div>
+          </div>
+        </div>
+        <div class="skeleton-card" style="margin-top:8px;">
+          <div><div class="skeleton-line" style="width:24px;height:16px;"></div></div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div class="skeleton-line" style="height:18px;width:75%;"></div>
+            <div class="skeleton-line" style="height:12px;width:45%;"></div>
+          </div>
+        </div>
+        <div class="skeleton-card" style="margin-top:8px;">
+          <div><div class="skeleton-line" style="width:24px;height:16px;"></div></div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div class="skeleton-line" style="height:18px;width:90%;"></div>
+            <div class="skeleton-line" style="height:12px;width:60%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Actual stories -->
+      <ul id="stories-list" role="list" aria-label="Ranked stories"></ul>
+
+      <!-- Empty state -->
+      <div id="empty-state" class="empty-state" role="status" aria-live="polite">
+        <div class="empty-icon" aria-hidden="true">🦀</div>
+        <p class="empty-title">No stories found</p>
+        <p class="empty-sub">Try a different search term or source filter</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ╔══════════════════════════════════════════════════╗ -->
+  <!-- ║  FOOTER                                          ║ -->
+  <!-- ╚══════════════════════════════════════════════════╝ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-text">
+          Rust Radar · scores from RSS + HN Algolia · <span id="last-updated-footer"></span>
+        </span>
+        <nav class="footer-links" aria-label="Footer links">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://this-week-in-rust.org" target="_blank" rel="noopener noreferrer">TWiR</a>
+          <a href="https://www.rust-lang.org" target="_blank" rel="noopener noreferrer">rust-lang.org</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ╔══════════════════════════════════════════════════╗ -->
+  <!-- ║  ERROR TOAST                                     ║ -->
+  <!-- ╚══════════════════════════════════════════════════╝ -->
+  <div id="error-toast" class="toast" role="alert" aria-live="assertive"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
