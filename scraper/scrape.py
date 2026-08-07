@@ -7,6 +7,11 @@ Usage:
     cd scraper
     pip install -r requirements.txt
     python scrape.py
+
+TL;DR feature:
+    Set OPENAI_API_KEY (or ANTHROPIC_API_KEY) env var to enable real
+    AI-generated summaries via generate_tldr().  Without the key,
+    the function returns an empty string and the frontend hides the field.
 """
 
 import json
@@ -37,6 +42,83 @@ def parse_dt(dt_struct) -> datetime | None:
         return datetime.fromtimestamp(ts, tz=timezone.utc)
     except Exception:
         return None
+
+
+# ── TL;DR via LLM API (placeholder — wire up your key to activate) ──────────
+
+def generate_tldr(title: str, url: str) -> str:
+    """
+    Generate a 1-sentence TL;DR for a story using an LLM.
+
+    Currently a PLACEHOLDER — returns empty string unless you configure
+    an LLM API key.  To activate:
+
+    Option A — OpenAI:
+        pip install openai
+        export OPENAI_API_KEY=sk-...
+        Uncomment the OpenAI block below.
+
+    Option B — Anthropic Claude:
+        pip install anthropic
+        export ANTHROPIC_API_KEY=sk-ant-...
+        Uncomment the Anthropic block below.
+
+    Option C — Ollama (local, free):
+        Install Ollama + pull a model: ollama pull llama3
+        Uncomment the Ollama block below.
+    """
+    import os
+
+    prompt = (
+        f"Write a single concise sentence (max 25 words) summarising this article for a "
+        f"technical developer audience. Title: \"{title}\"  URL: {url}. "
+        f"Reply with only the summary sentence, no prefix."
+    )
+
+    # ── Option A: OpenAI ────────────────────────────────────────
+    # api_key = os.getenv("OPENAI_API_KEY")
+    # if api_key:
+    #     try:
+    #         import openai
+    #         client = openai.OpenAI(api_key=api_key)
+    #         resp = client.chat.completions.create(
+    #             model="gpt-4o-mini",
+    #             messages=[{"role": "user", "content": prompt}],
+    #             max_tokens=60,
+    #             temperature=0.4,
+    #         )
+    #         return resp.choices[0].message.content.strip()
+    #     except Exception as e:
+    #         print(f"    ⚠ OpenAI TL;DR failed: {e}", file=sys.stderr)
+
+    # ── Option B: Anthropic ─────────────────────────────────────
+    # api_key = os.getenv("ANTHROPIC_API_KEY")
+    # if api_key:
+    #     try:
+    #         import anthropic
+    #         client = anthropic.Anthropic(api_key=api_key)
+    #         msg = client.messages.create(
+    #             model="claude-haiku-20240307",
+    #             max_tokens=60,
+    #             messages=[{"role": "user", "content": prompt}],
+    #         )
+    #         return msg.content[0].text.strip()
+    #     except Exception as e:
+    #         print(f"    ⚠ Anthropic TL;DR failed: {e}", file=sys.stderr)
+
+    # ── Option C: Ollama (local) ────────────────────────────────
+    # try:
+    #     resp = requests.post(
+    #         "http://localhost:11434/api/generate",
+    #         json={"model": "llama3", "prompt": prompt, "stream": False},
+    #         timeout=30,
+    #     )
+    #     return resp.json().get("response", "").strip()
+    # except Exception as e:
+    #     print(f"    ⚠ Ollama TL;DR failed: {e}", file=sys.stderr)
+
+    # Placeholder — returns empty string when no LLM is configured
+    return ""
 
 
 def age_hours(published: datetime | None) -> float:
@@ -118,6 +200,7 @@ def fetch_rss(url: str, weight: float) -> list[dict]:
             "source":       "rss",
             "age_hours":    round(hours, 2),
             "published_at": published.isoformat() if published else None,
+            "tldr":         generate_tldr(title, link),
             "_clean_url":   clean_url(link),
         })
 
@@ -173,6 +256,7 @@ def fetch_hn(query: str, num: int) -> list[dict]:
             "domain":       extract_domain(url),
             "score":        round(score, 2),
             "hn_points":    hn_points,
+            "tldr":         generate_tldr(title, url),
             "source":       "hn",
             "age_hours":    round(hours, 2),
             "published_at": published.isoformat() if published else None,
