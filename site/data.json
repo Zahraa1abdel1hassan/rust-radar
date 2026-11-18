@@ -1,97 +1,110 @@
 {
-  "generated_at": "2026-11-18T08:15:05.593317+00:00",
+  "generated_at": "2026-11-18T17:50:31.327787+00:00",
   "niche": "Rust",
   "stories": [
     {
-      "id": "rss-32334e7c",
-      "title": "Tuist cargo: compile cache and flaky test detection (experimental)",
-      "url": "https://users.rust-lang.org/t/tuist-cargo-compile-cache-and-flaky-test-detection-experimental/143735",
+      "id": "rss-7c3c87b2",
+      "title": "Tessera UI v3.0.0: Rebuilt from the tile up",
+      "url": "https://users.rust-lang.org/t/tessera-ui-v3-0-0-rebuilt-from-the-tile-up/143747",
       "domain": "users.rust-lang.org",
-      "score": 91.34,
+      "score": 129.14,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 17.18,
-      "published_at": "2026-11-17T15:04:28+00:00",
+      "age_hours": 5.18,
+      "published_at": "2026-11-18T12:39:23+00:00",
       "tldr": "",
       "heat": 1.0
     },
     {
-      "id": "rss-21fc4343",
+      "id": "rss-aab39dc3",
+      "title": "Announcing QuokkaDB — An embedded application database for Rust",
+      "url": "https://users.rust-lang.org/t/announcing-quokkadb-an-embedded-application-database-for-rust/143746",
+      "domain": "users.rust-lang.org",
+      "score": 127.59,
+      "hn_points": null,
+      "source": "rss",
+      "age_hours": 5.6,
+      "published_at": "2026-11-18T12:14:18+00:00",
+      "tldr": "",
+      "heat": 0.988
+    },
+    {
+      "id": "rss-ee390258",
+      "title": "Tuist cargo: compile cache and flaky test detection (experimental)",
+      "url": "https://users.rust-lang.org/t/tuist-cargo-compile-cache-and-flaky-test-detection-experimental/143735",
+      "domain": "users.rust-lang.org",
+      "score": 69.24,
+      "hn_points": null,
+      "source": "rss",
+      "age_hours": 26.77,
+      "published_at": "2026-11-17T15:04:28+00:00",
+      "tldr": "",
+      "heat": 0.5362
+    },
+    {
+      "id": "rss-76e5daed",
       "title": "Daegun 2.0.0 is out!",
       "url": "https://users.rust-lang.org/t/daegun-2-0-0-is-out/143724",
       "domain": "users.rust-lang.org",
-      "score": 59.33,
+      "score": 44.98,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 32.11,
+      "age_hours": 41.7,
       "published_at": "2026-11-17T00:08:16+00:00",
       "tldr": "",
-      "heat": 0.6496
+      "heat": 0.3483
     },
     {
-      "id": "rss-00614f39",
+      "id": "rss-0f785c6e",
       "title": "EMF/Xtext-inspired modeling and language tooling",
       "url": "https://users.rust-lang.org/t/emf-xtext-inspired-modeling-and-language-tooling/143719",
       "domain": "users.rust-lang.org",
-      "score": 45.8,
+      "score": 34.72,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 41.07,
+      "age_hours": 50.66,
       "published_at": "2026-11-16T15:10:36+00:00",
       "tldr": "",
-      "heat": 0.5014
+      "heat": 0.2689
     },
     {
-      "id": "rss-8b04eba9",
+      "id": "rss-0772d7c3",
       "title": "Enabling the parallel frontend on nightly",
       "url": "https://blog.rust-lang.org/2026/11/16/enabling-parallel-frontend-on-nightly/",
       "domain": "blog.rust-lang.org",
-      "score": 39.4,
+      "score": 29.87,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 56.25,
+      "age_hours": 65.84,
       "published_at": "2026-11-16T00:00:00+00:00",
       "tldr": "",
-      "heat": 0.4314
-    },
-    {
-      "id": "hn-50507976",
-      "title": "Show HN: profiler-md converts performance profiles to Markdown",
-      "url": "https://github.com/TomerAberbach/profiler-md",
-      "domain": "github.com",
-      "score": 13.23,
-      "hn_points": 4,
-      "tldr": "",
-      "source": "hn",
-      "age_hours": 64.17,
-      "published_at": "2026-11-15T16:04:51+00:00",
-      "heat": 0.1448
+      "heat": 0.2313
     },
     {
       "id": "hn-50511879",
       "title": "Shen-rust, A port of the Shen programming language to Rust",
       "url": "https://github.com/pyrex41/shen-rust",
       "domain": "github.com",
-      "score": 7.85,
+      "score": 7.06,
       "hn_points": 2,
       "tldr": "",
       "source": "hn",
-      "age_hours": 57.09,
+      "age_hours": 66.68,
       "published_at": "2026-11-15T23:09:43+00:00",
-      "heat": 0.0859
+      "heat": 0.0547
     },
     {
       "id": "hn-50518524",
       "title": "Show HN: Tyrus – TypeScript Syntax. Rust Semantics. Programming Language",
       "url": "https://tyruslang.org",
       "domain": "tyruslang.org",
-      "score": 7.71,
+      "score": 5.71,
       "hn_points": 1,
       "tldr": "",
       "source": "hn",
-      "age_hours": 40.91,
+      "age_hours": 50.5,
       "published_at": "2026-11-16T15:20:41+00:00",
-      "heat": 0.0844
+      "heat": 0.0442
     }
   ]
 }
