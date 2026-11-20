@@ -1,97 +1,110 @@
 {
-  "generated_at": "2026-11-20T15:56:15.765296+00:00",
+  "generated_at": "2026-11-20T22:32:39.398492+00:00",
   "niche": "Rust",
   "stories": [
     {
-      "id": "rss-25cffc37",
-      "title": "[Crate] text_chipper — Streaming Markdown-aware text chunker for RAG (strict token budgets, grapheme-safe, Python bindings)",
-      "url": "https://users.rust-lang.org/t/crate-text-chipper-streaming-markdown-aware-text-chunker-for-rag-strict-token-budgets-grapheme-safe-python-bindings/143809",
+      "id": "rss-2e1d45bf",
+      "title": "A Rust-powered compiler and interpreter for my own programming language",
+      "url": "https://users.rust-lang.org/t/a-rust-powered-compiler-and-interpreter-for-my-own-programming-language/143815",
       "domain": "users.rust-lang.org",
-      "score": 149.42,
+      "score": 143.85,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 0.13,
-      "published_at": "2026-11-20T15:48:10+00:00",
+      "age_hours": 1.45,
+      "published_at": "2026-11-20T21:05:36+00:00",
       "tldr": "",
       "heat": 1.0
     },
     {
-      "id": "rss-9c3eb713",
+      "id": "rss-643476f6",
+      "title": "[Crate] text_chipper — Streaming Markdown-aware text chunker for RAG (strict token budgets, grapheme-safe, Python bindings)",
+      "url": "https://users.rust-lang.org/t/crate-text-chipper-streaming-markdown-aware-text-chunker-for-rag-strict-token-budgets-grapheme-safe-python-bindings/143809",
+      "domain": "users.rust-lang.org",
+      "score": 123.47,
+      "hn_points": null,
+      "source": "rss",
+      "age_hours": 6.74,
+      "published_at": "2026-11-20T15:48:10+00:00",
+      "tldr": "",
+      "heat": 0.8583
+    },
+    {
+      "id": "rss-8375c735",
       "title": "SecretGuard: A 15µs terminal line-hook to stop secrets before shell history",
       "url": "https://users.rust-lang.org/t/secretguard-a-15-s-terminal-line-hook-to-stop-secrets-before-shell-history/143808",
       "domain": "users.rust-lang.org",
-      "score": 146.8,
+      "score": 121.3,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 0.75,
+      "age_hours": 7.35,
       "published_at": "2026-11-20T15:11:25+00:00",
       "tldr": "",
-      "heat": 0.9825
+      "heat": 0.8432
     },
     {
-      "id": "rss-d5efe43a",
+      "id": "rss-c41ae35b",
       "title": "Ihash: the fastest high-quality non-cryptographic hash",
       "url": "https://users.rust-lang.org/t/ihash-the-fastest-high-quality-non-cryptographic-hash/143791",
       "domain": "users.rust-lang.org",
-      "score": 103.51,
+      "score": 85.53,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 12.84,
+      "age_hours": 19.45,
       "published_at": "2026-11-20T03:05:37+00:00",
       "tldr": "",
-      "heat": 0.6927
+      "heat": 0.5946
     },
     {
-      "id": "rss-f2583f13",
+      "id": "rss-e46a2736",
       "title": "Razorwire: a proxy that blocks an AI agent's tool calls before they run",
       "url": "https://users.rust-lang.org/t/razorwire-a-proxy-that-blocks-an-ai-agents-tool-calls-before-they-run/143784",
       "domain": "users.rust-lang.org",
-      "score": 72.97,
+      "score": 60.29,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 24.95,
+      "age_hours": 31.56,
       "published_at": "2026-11-19T14:59:11+00:00",
       "tldr": "",
-      "heat": 0.4884
+      "heat": 0.4191
     },
     {
-      "id": "rss-e5bd546d",
+      "id": "rss-68fb758d",
       "title": "This Week in Rust 678",
       "url": "https://this-week-in-rust.org/blog/2026/11/18/this-week-in-rust-678/",
       "domain": "this-week-in-rust.org",
-      "score": 36.46,
+      "score": 30.13,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 58.94,
+      "age_hours": 65.54,
       "published_at": "2026-11-18T05:00:00+00:00",
       "tldr": "",
-      "heat": 0.244
+      "heat": 0.2095
     },
     {
-      "id": "rss-02deb1e6",
+      "id": "rss-8fd2cc3a",
       "title": "Tessera UI v3.0.0: Rebuilt from the tile up",
       "url": "https://users.rust-lang.org/t/tessera-ui-v3-0-0-rebuilt-from-the-tile-up/143747",
       "domain": "users.rust-lang.org",
-      "score": 34.11,
+      "score": 28.19,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 51.28,
+      "age_hours": 57.89,
       "published_at": "2026-11-18T12:39:23+00:00",
       "tldr": "",
-      "heat": 0.2283
+      "heat": 0.196
     },
     {
-      "id": "rss-8094f40a",
+      "id": "rss-402d3162",
       "title": "Announcing QuokkaDB — An embedded application database for Rust",
       "url": "https://users.rust-lang.org/t/announcing-quokkadb-an-embedded-application-database-for-rust/143746",
       "domain": "users.rust-lang.org",
-      "score": 33.7,
+      "score": 27.85,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 51.7,
+      "age_hours": 58.3,
       "published_at": "2026-11-18T12:14:18+00:00",
       "tldr": "",
-      "heat": 0.2255
+      "heat": 0.1936
     }
   ]
 }
