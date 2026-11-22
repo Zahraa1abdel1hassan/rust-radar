@@ -1,97 +1,97 @@
 {
-  "generated_at": "2026-11-21T19:57:41.592525+00:00",
+  "generated_at": "2026-11-22T00:14:17.939389+00:00",
   "niche": "Rust",
   "stories": [
     {
-      "id": "rss-7361b3f5",
+      "id": "rss-14af0a28",
       "title": "[ANN] dataviz 1.0: plotting with 120+ chart types, live windows, 3D and maps",
       "url": "https://users.rust-lang.org/t/ann-dataviz-1-0-plotting-with-120-chart-types-live-windows-3d-and-maps/143818",
       "domain": "users.rust-lang.org",
-      "score": 82.92,
+      "score": 73.28,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 20.53,
+      "age_hours": 24.8,
       "published_at": "2026-11-20T23:26:08+00:00",
       "tldr": "",
       "heat": 1.0
     },
     {
-      "id": "rss-9506fb6d",
+      "id": "rss-6305faa4",
       "title": "A Rust-powered compiler and interpreter for my own programming language",
       "url": "https://users.rust-lang.org/t/a-rust-powered-compiler-and-interpreter-for-my-own-programming-language/143815",
       "domain": "users.rust-lang.org",
-      "score": 77.49,
+      "score": 68.49,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 22.87,
+      "age_hours": 27.14,
       "published_at": "2026-11-20T21:05:36+00:00",
       "tldr": "",
-      "heat": 0.9345
+      "heat": 0.9346
     },
     {
-      "id": "rss-62b1494b",
+      "id": "rss-aa3ab221",
       "title": "[Crate] text_chipper — Streaming Markdown-aware text chunker for RAG (strict token budgets, grapheme-safe, Python bindings)",
       "url": "https://users.rust-lang.org/t/crate-text-chipper-streaming-markdown-aware-text-chunker-for-rag-strict-token-budgets-grapheme-safe-python-bindings/143809",
       "domain": "users.rust-lang.org",
-      "score": 66.51,
+      "score": 58.79,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 28.16,
+      "age_hours": 32.43,
       "published_at": "2026-11-20T15:48:10+00:00",
       "tldr": "",
-      "heat": 0.8021
+      "heat": 0.8023
     },
     {
-      "id": "rss-1ba93f24",
+      "id": "rss-b13f69e6",
       "title": "SecretGuard: A 15µs terminal line-hook to stop secrets before shell history",
       "url": "https://users.rust-lang.org/t/secretguard-a-15-s-terminal-line-hook-to-stop-secrets-before-shell-history/143808",
       "domain": "users.rust-lang.org",
-      "score": 65.35,
+      "score": 57.75,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 28.77,
+      "age_hours": 33.05,
       "published_at": "2026-11-20T15:11:25+00:00",
       "tldr": "",
       "heat": 0.7881
     },
     {
-      "id": "rss-a0d58bb5",
+      "id": "rss-cedbcb63",
       "title": "Ihash: the fastest high-quality non-cryptographic hash",
       "url": "https://users.rust-lang.org/t/ihash-the-fastest-high-quality-non-cryptographic-hash/143791",
       "domain": "users.rust-lang.org",
-      "score": 46.08,
+      "score": 40.73,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 40.87,
+      "age_hours": 45.14,
       "published_at": "2026-11-20T03:05:37+00:00",
       "tldr": "",
-      "heat": 0.5557
+      "heat": 0.5558
     },
     {
-      "id": "rss-826197b5",
+      "id": "rss-b6c76410",
       "title": "Razorwire: a proxy that blocks an AI agent's tool calls before they run",
       "url": "https://users.rust-lang.org/t/razorwire-a-proxy-that-blocks-an-ai-agents-tool-calls-before-they-run/143784",
       "domain": "users.rust-lang.org",
-      "score": 32.48,
+      "score": 28.71,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 52.97,
+      "age_hours": 57.25,
       "published_at": "2026-11-19T14:59:11+00:00",
       "tldr": "",
-      "heat": 0.3917
+      "heat": 0.3918
     },
     {
       "id": "hn-50587355",
       "title": "Show HN: Learnmap, learn programming in a playful way",
       "url": "https://learnmap.sh",
       "domain": "learnmap.sh",
-      "score": 29.51,
+      "score": 23.71,
       "hn_points": 1,
       "tldr": "",
       "source": "hn",
-      "age_hours": 10.98,
+      "age_hours": 15.26,
       "published_at": "2026-11-21T08:58:46+00:00",
-      "heat": 0.3559
+      "heat": 0.3236
     }
   ]
 }
