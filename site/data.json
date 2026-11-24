@@ -1,97 +1,110 @@
 {
-  "generated_at": "2026-11-23T23:29:04.957240+00:00",
+  "generated_at": "2026-11-24T08:46:01.212655+00:00",
   "niche": "Rust",
   "stories": [
     {
-      "id": "rss-dce3d5f6",
-      "title": "Tellus 0.6: stashing, rolling upgrades and a faster cluster",
-      "url": "https://users.rust-lang.org/t/tellus-0-6-stashing-rolling-upgrades-and-a-faster-cluster/143884",
+      "id": "rss-b0bc2cc0",
+      "title": "[Announcement] tauri-plugin-updater-plus: Electron-style blockmap differential updates for Tauri v3",
+      "url": "https://users.rust-lang.org/t/announcement-tauri-plugin-updater-plus-electron-style-blockmap-differential-updates-for-tauri-v3/143913",
       "domain": "users.rust-lang.org",
-      "score": 116.59,
+      "score": 139.49,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 8.73,
-      "published_at": "2026-11-23T14:45:31+00:00",
+      "age_hours": 2.51,
+      "published_at": "2026-11-24T06:15:07+00:00",
       "tldr": "",
       "heat": 1.0
     },
     {
-      "id": "rss-2507dd14",
+      "id": "rss-1634c2e6",
+      "title": "Tellus 0.6: stashing, rolling upgrades and a faster cluster",
+      "url": "https://users.rust-lang.org/t/tellus-0-6-stashing-rolling-upgrades-and-a-faster-cluster/143884",
+      "domain": "users.rust-lang.org",
+      "score": 89.17,
+      "hn_points": null,
+      "source": "rss",
+      "age_hours": 18.01,
+      "published_at": "2026-11-23T14:45:31+00:00",
+      "tldr": "",
+      "heat": 0.6393
+    },
+    {
+      "id": "rss-d9da67dc",
       "title": "Rust All Hands 2027",
       "url": "https://blog.rust-lang.org/inside-rust/2026/11/23/all-hands-2027/",
       "domain": "blog.rust-lang.org",
-      "score": 91.35,
+      "score": 69.87,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 23.48,
+      "age_hours": 32.77,
       "published_at": "2026-11-23T00:00:00+00:00",
       "tldr": "",
-      "heat": 0.7835
+      "heat": 0.5009
     },
     {
-      "id": "rss-e72321e8",
+      "id": "rss-fcd087ad",
       "title": "NeuroLib 0.1.0: spiking neural networks, quantization and neural-recording tools in Rust, built on Burn",
       "url": "https://users.rust-lang.org/t/neurolib-0-1-0-spiking-neural-networks-quantization-and-neural-recording-tools-in-rust-built-on-burn/143867",
       "domain": "users.rust-lang.org",
-      "score": 68.01,
+      "score": 52.02,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 27.39,
+      "age_hours": 36.67,
       "published_at": "2026-11-22T20:05:54+00:00",
       "tldr": "",
-      "heat": 0.5833
+      "heat": 0.3729
     },
     {
-      "id": "rss-5017820c",
+      "id": "rss-a13df398",
       "title": "[ANN] reflectapi 0.26: define your web API in Rust, get typed TypeScript, Python and Rust clients",
       "url": "https://users.rust-lang.org/t/ann-reflectapi-0-26-define-your-web-api-in-rust-get-typed-typescript-python-and-rust-clients/143866",
       "domain": "users.rust-lang.org",
-      "score": 67.81,
+      "score": 51.86,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 27.49,
+      "age_hours": 36.77,
       "published_at": "2026-11-22T19:59:33+00:00",
       "tldr": "",
-      "heat": 0.5816
+      "heat": 0.3718
     },
     {
       "id": "hn-50604174",
       "title": "Natural Programming Just Dropped",
       "url": "https://github.com/fraliv50/llang-natural-language-programming-",
       "domain": "github.com",
-      "score": 17.23,
+      "score": 12.57,
       "hn_points": 2,
       "tldr": "",
       "source": "hn",
-      "age_hours": 25.85,
+      "age_hours": 35.14,
       "published_at": "2026-11-22T21:37:49+00:00",
-      "heat": 0.1478
+      "heat": 0.0901
     },
     {
       "id": "hn-50598756",
       "title": "Show HN: Coma – Bilingual ES/EN language with LLVM back end and C runtime",
       "url": "https://news.ycombinator.com/item?id=50598756",
       "domain": "news.ycombinator.com",
-      "score": 9.37,
+      "score": 6.73,
       "hn_points": 1,
       "tldr": "",
       "source": "hn",
-      "age_hours": 35.66,
+      "age_hours": 44.95,
       "published_at": "2026-11-22T11:49:14+00:00",
-      "heat": 0.0804
+      "heat": 0.0482
     },
     {
       "id": "hn-50587355",
       "title": "Show HN: Learnmap, learn programming in a playful way",
       "url": "https://learnmap.sh",
       "domain": "learnmap.sh",
-      "score": 4.35,
+      "score": 3.79,
       "hn_points": 1,
       "tldr": "",
       "source": "hn",
-      "age_hours": 62.51,
+      "age_hours": 71.79,
       "published_at": "2026-11-21T08:58:46+00:00",
-      "heat": 0.0373
+      "heat": 0.0272
     }
   ]
 }
