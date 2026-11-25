@@ -1,110 +1,97 @@
 {
-  "generated_at": "2026-11-25T13:57:08.959535+00:00",
+  "generated_at": "2026-11-25T22:59:59.075298+00:00",
   "niche": "Rust",
   "stories": [
     {
-      "id": "rss-7218a9b3",
+      "id": "rss-044aa87a",
       "title": "Rolling upgrades in tellus: old code cannot learn a new shape",
       "url": "https://users.rust-lang.org/t/rolling-upgrades-in-tellus-old-code-cannot-learn-a-new-shape/143946",
       "domain": "users.rust-lang.org",
-      "score": 135.32,
+      "score": 104.21,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 3.57,
+      "age_hours": 12.61,
       "published_at": "2026-11-25T10:23:09+00:00",
       "tldr": "",
       "heat": 1.0
     },
     {
-      "id": "rss-89ae561f",
+      "id": "rss-9f4c3ab9",
       "title": "Multicalc v0.11.0: Robotics and math in no_std rust, now tested across real silicon",
       "url": "https://users.rust-lang.org/t/multicalc-v0-11-0-robotics-and-math-in-no-std-rust-now-tested-across-real-silicon/143930",
       "domain": "users.rust-lang.org",
-      "score": 80.32,
+      "score": 61.85,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 21.63,
+      "age_hours": 30.68,
       "published_at": "2026-11-24T16:19:23+00:00",
       "tldr": "",
-      "heat": 0.5936
+      "heat": 0.5935
     },
     {
-      "id": "rss-8adf7a28",
+      "id": "rss-ea177dc0",
       "title": "[AI] Cargo prune - delete old incremental build artifacts",
       "url": "https://users.rust-lang.org/t/ai-cargo-prune-delete-old-incremental-build-artifacts/143919",
       "domain": "users.rust-lang.org",
-      "score": 66.45,
+      "score": 51.17,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 28.19,
+      "age_hours": 37.24,
       "published_at": "2026-11-24T09:45:31+00:00",
       "tldr": "",
-      "heat": 0.4911
+      "heat": 0.491
     },
     {
-      "id": "rss-ecdff046",
+      "id": "rss-a9bfe44a",
       "title": "[Announcement] tauri-plugin-updater-plus: Electron-style blockmap differential updates for Tauri v3",
       "url": "https://users.rust-lang.org/t/announcement-tauri-plugin-updater-plus-electron-style-blockmap-differential-updates-for-tauri-v3/143913",
       "domain": "users.rust-lang.org",
-      "score": 60.05,
+      "score": 46.24,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 31.7,
+      "age_hours": 40.75,
       "published_at": "2026-11-24T06:15:07+00:00",
       "tldr": "",
-      "heat": 0.4438
+      "heat": 0.4437
     },
     {
-      "id": "rss-fd38c843",
+      "id": "hn-50643342",
+      "title": "Show HN: I implemented LINQ in my own programming language",
+      "url": "https://github.com/ArcadeMakerSources/ArcadeMaker/blob/master/src/Exp/libs/linq.txt",
+      "domain": "github.com",
+      "score": 35.47,
+      "hn_points": 1,
+      "tldr": "",
+      "source": "hn",
+      "age_hours": 7.47,
+      "published_at": "2026-11-25T15:31:40+00:00",
+      "heat": 0.3404
+    },
+    {
+      "id": "rss-362a4d54",
       "title": "Tellus 0.6: stashing, rolling upgrades and a faster cluster",
       "url": "https://users.rust-lang.org/t/tellus-0-6-stashing-rolling-upgrades-and-a-faster-cluster/143884",
       "domain": "users.rust-lang.org",
-      "score": 38.38,
+      "score": 29.56,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 47.19,
+      "age_hours": 56.24,
       "published_at": "2026-11-23T14:45:31+00:00",
       "tldr": "",
-      "heat": 0.2836
+      "heat": 0.2837
     },
     {
-      "id": "rss-35ec3a2b",
+      "id": "rss-86401a0a",
       "title": "Rust All Hands 2027",
       "url": "https://blog.rust-lang.org/inside-rust/2026/11/23/all-hands-2027/",
       "domain": "blog.rust-lang.org",
-      "score": 30.08,
+      "score": 23.16,
       "hn_points": null,
       "source": "rss",
-      "age_hours": 61.95,
+      "age_hours": 71.0,
       "published_at": "2026-11-23T00:00:00+00:00",
       "tldr": "",
-      "heat": 0.2223
-    },
-    {
-      "id": "rss-7831b63a",
-      "title": "NeuroLib 0.1.0: spiking neural networks, quantization and neural-recording tools in Rust, built on Burn",
-      "url": "https://users.rust-lang.org/t/neurolib-0-1-0-spiking-neural-networks-quantization-and-neural-recording-tools-in-rust-built-on-burn/143867",
-      "domain": "users.rust-lang.org",
-      "score": 22.39,
-      "hn_points": null,
-      "source": "rss",
-      "age_hours": 65.85,
-      "published_at": "2026-11-22T20:05:54+00:00",
-      "tldr": "",
-      "heat": 0.1655
-    },
-    {
-      "id": "rss-86ad7bd6",
-      "title": "[ANN] reflectapi 0.26: define your web API in Rust, get typed TypeScript, Python and Rust clients",
-      "url": "https://users.rust-lang.org/t/ann-reflectapi-0-26-define-your-web-api-in-rust-get-typed-typescript-python-and-rust-clients/143866",
-      "domain": "users.rust-lang.org",
-      "score": 22.32,
-      "hn_points": null,
-      "source": "rss",
-      "age_hours": 65.96,
-      "published_at": "2026-11-22T19:59:33+00:00",
-      "tldr": "",
-      "heat": 0.1649
+      "heat": 0.2222
     }
   ]
 }
